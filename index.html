@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri Kenangan 📸</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="loginPage">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="login-box">
+    <div class="camera">📸</div>
+    <h1>Galeri Kenangan</h1>
+    <p class="subtitle">Simpan setiap momen yang berharga ✨</p>
+
+    <form id="loginForm">
+      <label>Email / Username</label>
+      <input id="email" type="text" placeholder="Masukkan email" required>
+
+      <label>Password</label>
+      <div class="password-wrap">
+        <input id="password" type="password" placeholder="Masukkan password" required>
+        <button type="button" id="togglePassword">👁️</button>
+      </div>
+
+      <button class="login-btn" type="submit">🔐 Masuk ke Galeri</button>
+      <p id="errorMessage">Email atau password salah!</p>
+    </form>
+
+    <small>KENANGAN YANG INDAH TIDAK AKAN TERLUPAKAN ❤️</small>
+  </div>
+</section>
+
+<section id="galleryPage">
+  <header>
+    <button id="logoutBtn">Keluar</button>
+    <h1>Galeri Kenangan 📸</h1>
+    <p>Semua foto dari perjalananmu akan tampil di sini.</p>
+  </header>
+
+  <main>
+    <div class="upload-area">
+      <label for="photoInput" class="upload-btn">＋ Upload Foto</label>
+      <input id="photoInput" type="file" accept="image/*" multiple>
+      <p>Pilih foto. Nama, tanggal, dan waktu upload akan tercatat otomatis.</p>
+    </div>
+
+    <div id="gallery" class="gallery"></div>
+  </main>
+</section>
+
+<div id="loading">
+  <div class="loader"></div>
+  <p>Membuka Galeri...</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
